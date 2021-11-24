@@ -5,18 +5,16 @@ public class CalcolaValutazione {
 	int pAssenze;
 	float mVoti;
 	
-	public CalcolaValutazione() {
-		IdStudente=0;
-		pAssenze=0;
-		mVoti=0;
-	}
-	
-	public CalcolaValutazione(int IdStudente, int pAssenze, float mVoti){
+	CalcolaValutazione(int IdStudente, int pAssenze, float mVoti){
 		this.IdStudente=IdStudente;
 		this.pAssenze=pAssenze;
 		this.mVoti = mVoti;
 	}
-	
+	CalcolaValutazione(){
+		this.IdStudente=0;
+		this.pAssenze=0;
+		this.mVoti=0;
+	}
 	public boolean Esito() {
 		boolean esito=true;
 		if(pAssenze>50) {

@@ -10,12 +10,12 @@ public class Main {
 		CalcolaValutazione[] studenti = new CalcolaValutazione[20];
 		
 		for (int i = 0; i < studenti.length; i++) {
-			CalcolaValutazione studente = new CalcolaValutazione();
-			studente.IdStudente = i+1;
-			studente.pAssenze = r.nextInt(100);
-			studente.mVoti = r.nextFloat(10);
-			;
-			studenti[i]=studente;
+			studenti[i]= new CalcolaValutazione();
+			studenti[i].IdStudente = i+1;
+			studenti[i].pAssenze = r.nextInt(100);
+			studenti[i].mVoti = r.nextFloat(10);
+			
+			//studenti[i]=studente;
 			System.out.print("IdStudente: "+studenti[i].IdStudente + "  ");
 			System.out.print("pAssenze: "+studenti[i].pAssenze + "  ");
 			System.out.println("mVoti: "+studenti[i].mVoti);
